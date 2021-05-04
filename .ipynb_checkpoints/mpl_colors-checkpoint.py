@@ -151,5 +151,14 @@ class MPLColors:
     def __add__(self, other):
         """Override add operation."""
         return MPLColors(tuple(self.get_color_list() + other.get_color_list()))
+    
+    def __getitem__(self, key):
+        """Return a quantified color indexed by key if integer,
+           otherwise, return a color from normalized colormap."""
+        return self.get_color(key)
+            
+    def __iter__(self):
+        """Return quantifed color list for iterations."""
+        return self._listed_cmap_colors
         
 
