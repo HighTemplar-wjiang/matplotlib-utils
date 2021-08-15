@@ -6,53 +6,56 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 
-# Colors for points, lines.
-mpl_color_list_curves = [
-    "#cf625b", # Red-like,
-    "#51a8cf", # Blue-like,
-    "#50bf57", # Green-like
-]
+class preset_params:
+    
+    # Colors for points, lines.
+    mpl_color_list_curves = [
+        "#cf625b", # Red-like,
+        "#51a8cf", # Blue-like,
+        "#50bf57", # Green-like
+    ]
 
-# Colors for fill-in. 
-mpl_color_list_fillins = [
-    "#64c9f5", # Light blue
-    "#f57e76", # Light red
-]
+    # Colors for fill-in. 
+    mpl_color_list_fillins = [
+        "#64c9f5", # Light blue
+        "#f57e76", # Light red
+    ]
 
-# Pre-settings for figures.
+    # Pre-settings for figures.
 
-# 2 figures per row.
-ax_label_params_small = {
-    "fontsize": 14,
-    "fontstyle": "italic",
-    "fontweight": "bold"
-}
-tick_label_params_small = {
-    "fontsize": 12,
-    "fontweight": "bold"
-}
+    # 2 figures per row.
+    ax_label_params_small = {
+        "fontsize": 14,
+        "fontstyle": "italic",
+        "fontweight": "bold"
+    }
+    tick_label_params_small = {
+        "fontsize": 12,
+        "fontweight": "bold"
+    }
 
-# 3 figures per row.
-ax_label_params_normal = {
-    "fontsize": 20,
-    "fontstyle": "italic",
-    "fontweight": "bold"
-}
-tick_label_params_normal = {
-    "fontsize": 18,
-    "fontweight": "bold"
-}
+    # 3 figures per row.
+    ax_label_params_normal = {
+        "fontsize": 20,
+        "fontstyle": "italic",
+        "fontweight": "bold"
+    }
+    tick_label_params_normal = {
+        "fontsize": 18,
+        "fontweight": "bold"
+    }
 
-# 4 figures per row.
-ax_label_params_large = {
-    "fontsize": 30,
-    "fontstyle": "italic",
-    "fontweight": "bold"
-}
-tick_label_params_large = {
-    "fontsize": 28,
-    "fontweight": "bold"
-}
+    # 4 figures per row.
+    ax_label_params_large = {
+        "fontsize": 30,
+        "fontstyle": "italic",
+        "fontweight": "bold"
+    }
+    
+    tick_label_params_large = {
+        "fontsize": 28,
+        "fontweight": "bold"
+    }
 
 # Master class for colors.
 class MPLColors:
